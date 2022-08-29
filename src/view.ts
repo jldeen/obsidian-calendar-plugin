@@ -7,7 +7,7 @@ import {
 import { FileView, TFile, ItemView, WorkspaceLeaf } from "obsidian";
 
 import { TRIGGER_ON_OPEN, VIEW_TYPE_CALENDAR } from "src/constants";
-import { tryToCreatePeriodicNote } from "src/io/dailyNotes";
+import { tryToCreatePeriodicNote } from "src/io/periodicNotes";
 import type { ISettings } from "src/settings";
 
 import Calendar from "./ui/Calendar.svelte";
