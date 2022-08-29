@@ -15,7 +15,7 @@
     "@popperjs/svelte": "0.1.1",
     "obsidian": "obsidianmd/obsidian-api#master",
     "obsidian-calendar-ui": "0.4.0",
-    "obsidian-daily-notes-interface": "0.9.2",
+    "obsidian-daily-notes-interface": "0.9.4",
     "semver": "7.3.5",
     "svelte": "3.37.0",
     "tslib": "2.2.0"
