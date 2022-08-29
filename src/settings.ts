@@ -18,6 +18,6 @@ export const defaultSettings = Object.freeze({
   localeOverride: "system-default",
   weekStart: "locale" as IWeekStartOption,
 
-  showWeeklyNote: false,
+  showWeeklyNote: true,
   sourceSettings: {},
 });

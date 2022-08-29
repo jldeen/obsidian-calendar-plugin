@@ -9,6 +9,18 @@ import {
 import type { ISettings } from "src/settings";
 import { createConfirmationDialog } from "src/ui/modal";
 
+function getPeriodicity(granularity) {
+  const periodicity = {
+      day: "daily",
+      week: "weekly",
+      month: "monthly",
+  };
+  return periodicity[granularity];
+}
+function capitalize(text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 /**
  * Create a Daily Note for a given date.
  */
@@ -38,7 +50,7 @@ export async function tryToCreatePeriodicNote(
       cta: "Create",
       onAccept: createFile,
       text: `File ${filename} does not exist. Would you like to create it?`,
-      title: "New Daily Note",
+      title: `New ${capitalize(getPeriodicity(granularity))} Note`,
     });
   } else {
     await createFile();
